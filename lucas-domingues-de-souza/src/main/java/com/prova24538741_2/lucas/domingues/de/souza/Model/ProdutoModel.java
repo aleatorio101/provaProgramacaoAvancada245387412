@@ -17,7 +17,7 @@ public class ProdutoModel {
     private String nomeProduto;
     private String descricaoProduto;
     private double precoProduto;
-    private StatusProduto statusProduto;
+    private StatusProduto status;
 
     public ProdutoModel() {
     }
@@ -54,11 +54,11 @@ public class ProdutoModel {
         this.precoProduto = precoProduto;
     }
 
-    public StatusProduto getStatusProduto() {
-        return statusProduto;
+    public StatusProduto getStatus() {
+        return status;
     }
 
-    public void setStatusProduto(StatusProduto statusProduto) {
-        this.statusProduto = statusProduto;
+    public void setStatus(StatusProduto status) {
+        this.status = status;
     }
 }
