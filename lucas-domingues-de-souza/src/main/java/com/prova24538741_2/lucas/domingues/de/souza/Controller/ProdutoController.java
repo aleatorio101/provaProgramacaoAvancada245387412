@@ -35,6 +35,9 @@ public class ProdutoController {
 
     @PutMapping("/{id}")
     public ResponseEntity<ProdutoModel> update(@PathVariable Long id, @RequestBody ProdutoModel produtoModel) {
+        if (produtoService.findById(id).isEmpty()) {
+            return ResponseEntity.notFound().build();
+        }
         return ResponseEntity.ok(produtoService.atualizar(produtoModel, id));
     }
 
