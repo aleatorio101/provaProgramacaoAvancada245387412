@@ -10,7 +10,7 @@
 "nomeProduto" : "Feijao",
 "descricaoProduto": "saco de feijao",
 "precoProduto": 123,
-"statusProduto": "DISPONIVEL"
+"status": "DISPONIVEL"
 
 }
 
@@ -22,7 +22,7 @@
         "id": 1,
         "nomeProduto": "Feijao",
         "precoProduto": 123.0,
-        "statusProduto": "DISPONIVEL"
+        "status": "DISPONIVEL"
     },
   
     {
@@ -30,7 +30,7 @@
         "id": 2,
         "nomeProduto": "ARROZ",
         "precoProduto": 123.0,
-        "statusProduto": "ESGOTADO"
+        "status": "ESGOTADO"
     }
 
 - para requisição que lista apenas um produto específico é necessária a requisição para GET localhost:8080/api/produtos/id <- aqui altera para o id do produto e retornando apenas um produto ex:
@@ -40,7 +40,7 @@
         "id": 1,
         "nomeProduto": "Feijao",
         "precoProduto": 123.0,
-        "statusProduto": "DISPONIVEL"
+        "status": "DISPONIVEL"
     }
   
 - caso não seja encontrado retorna 404 notfund
@@ -50,7 +50,7 @@
 "nomeProduto" : "farinha",
 "descricaoProduto": "saco de farinha",
 "precoProduto": 123,
-"statusProduto": "INATIVO"
+"status": "INATIVO"
 
 }
 
